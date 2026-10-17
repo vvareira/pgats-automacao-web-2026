@@ -10,7 +10,6 @@ function preencherLogin(email, senha) {
 
 
 function iniciarCadastro(nome, email) {   
-
     cy.get('.shop-menu > .nav > :nth-child(4)').click();
     cy.get('[data-qa="signup-name"]').type(nome);
     cy.get('[data-qa="signup-email"]').type(email);
@@ -19,7 +18,6 @@ function iniciarCadastro(nome, email) {
 }
 
 function preencherFormularioCadastro() {  
-
     cy.get('#id_gender2').check();
     cy.get('[data-qa="password"]').type('123456'); 
     cy.get('[data-qa="days"]').select('10');
