@@ -18,7 +18,7 @@ jobs:
         run: node --version
 
       - name: Instalando dependências
-        run: npm install
+        run: npm ci
 
       - name: Executando os testes
         run: npx cypress run
@@ -30,4 +30,4 @@ jobs:
           path: |
             cypress/reports
             cypress/screenshots
-             cypress/videos 
+            cypress/videos
