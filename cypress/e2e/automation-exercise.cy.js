@@ -22,7 +22,7 @@ describe('Automation Exercise', () => {    it('Cadastrar um novo usuário com su
     });
 
     it('Login com sucesso', () => {
-        cy.visit('https://automationexercise.com')
+        cy.visit('/')
 
         preencherLogin('vmv@teste.com', 'vmv123456')
 
@@ -32,7 +32,7 @@ describe('Automation Exercise', () => {    it('Cadastrar um novo usuário com su
     });
 
     it('Login com email e senha incorretos', () => {
-        cy.visit('https://automationexercise.com')
+        cy.visit('/')
 
 
         preencherLogin('teste@teste.com', '999999')
@@ -43,7 +43,7 @@ describe('Automation Exercise', () => {    it('Cadastrar um novo usuário com su
 
 
      it('Logout com sucesso', () => {
-        cy.visit('https://automationexercise.com')
+        cy.visit('/')
 
         
         preencherLogin('vmv@teste.com', 'vmv123456')
@@ -53,7 +53,7 @@ describe('Automation Exercise', () => {    it('Cadastrar um novo usuário com su
 
 
     it('Tentar cadastrar usuário com email já existente', () => {
-        cy.visit('https://automationexercise.com')
+        cy.visit('/')
 
         iniciarCadastro('Vmv', 'vmv@teste.com')
 
